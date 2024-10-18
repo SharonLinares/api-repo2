@@ -27,5 +27,11 @@ public class HolaMundo {
         return "Soy: " + nombre;
     }
 
+
+    @GetMapping("/dime-tu-edad")
+    public String edad(@RequestParam(name = "edad") final String edad){
+        return "tengo" + edad;
+
+    }
 }
 
